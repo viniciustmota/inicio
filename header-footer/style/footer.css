@@ -1,0 +1,171 @@
+footer{
+    height: 415px;
+    background-color: #121212;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.conteudo-footer{
+    padding: 30px 0;
+    color: white;
+    font-size: 16px;
+    font-weight:bold;
+    width: 90%;
+}
+
+.part-cima{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.part-cima h1,h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.part-cima p{
+    padding-bottom: 5px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo-footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.conteudo-footer hr{
+    margin:30px 0 40px;
+}
+
+.part-1{
+    width: 200px;
+}
+
+.redes{
+    display: flex;
+    gap: 10px;
+}
+
+.redes div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 10px 0 20px;
+    
+}
+
+.part-4 i{
+    font-size: 20px;
+    color: #121212;
+}
+
+#icon-face{
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.redes div:hover{
+    background-color: #c2c2c2;
+}
+
+#icon-face:hover{
+    color:#c2c2c2
+}
+
+.part-baixo{
+    font-size: 16px;
+    display: flex;
+    justify-content:space-between;
+    gap: 80px;
+    align-items: center;
+    font-weight: 100;
+    flex-wrap: wrap;
+}
+
+.part-baixo div{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.bloco-pagamento{
+    width: 200px;
+    height: 72px;
+}
+
+.bloco-a-pagamento{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.bloco-b-pagamento{
+    display: flex;
+    gap: 8px;
+}
+
+.img-pagamento{
+    background-color: #fdfdfd;
+    width: 43px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.img-pagamento img{
+    width: 35px;
+    height: 22px;
+}
+
+@media screen and (max-width:1330px ) {
+    .conteudo-footer{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1064px ) {
+    footer{
+    height: auto;       
+    }
+    
+    .part-cima, .part-baixo{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:500px ) {
+    
+    .part-cima,.part-baixo, .part-baixo div{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .part-1, .part-2, .part-3, .part-4{
+        text-align: center;
+    }
+
+    .redes{
+    justify-content: space-around;       
+    }
+
+    .part-baixo, .part-baixo div{
+        gap: 20px;
+    }
+}

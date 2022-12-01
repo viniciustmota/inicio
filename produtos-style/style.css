@@ -1,0 +1,124 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'lato';
+    }
+    
+    #produtos {
+        width: 100%;
+        padding: 90px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+        justify-content:center;
+    }
+
+    #carrinho {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2%;
+        display: block;
+    }
+
+
+    .produto-single {
+        width: 301.25px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .produto-single a{
+        text-decoration: none;
+    }
+
+    .produto-single img {
+        width: 299.25px;
+    }
+
+    .produto-single .nome-pdt {
+        color: black;
+        text-align: center;
+        font-size: 20px;
+        padding: 16px 16px 10px 16px;
+        
+    }
+
+    .preco-pdt{
+        font-size: 20px;
+        color: black;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .preco-desc{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .valor_I{ 
+        font-size: 15px; 
+        text-decoration: line-through;
+    }
+
+    .desconto{
+        padding: 5px;
+        background-color: red;
+        color: #fdfdfd;
+        border-radius: 5px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .info-single-checkout {
+        border-bottom: 2px dotted;
+        padding: 10px 0;
+    }
+
+    
+    @media screen and (max-width: 1330px) {
+        #produtos{
+            justify-content:space-between;
+            margin: 0 auto;
+
+        }
+
+        .produto-single {
+            width: 23%;
+        }
+
+        .produto-single img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        .produto-single {
+            width: 31%;
+        }
+    }
+
+    @media screen and (max-width: 1064px) {
+        .produto-single {
+            width: 48%;
+        }
+    }
+
+@media screen and (max-width: 950px) {
+    #produtos {
+        padding: 110px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .produto-single {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+

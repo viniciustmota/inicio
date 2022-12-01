@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    border-bottom: .05px solid #55555556;
+    position: fixed;
+    width: 100%;
+   
+}
+
+nav{
+    background-color: #fdfdfd;
+}
+
+.nav-Principal {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    flex-wrap: wrap;
+}
+
+.sub-nav{
+    display: flex;
+    align-items: center;
+}
+
+    /* links Principais */
+
+.nav-Principal ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-Principal ul li{
+    position: relative;
+}
+
+.nav-Principal ul li a {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 24px 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-Principal ul li a:hover{
+    text-decoration: underline .3px;
+}
+
+.nav-Principal ul ul{
+    display: none;
+    position: absolute;
+}
+
+.nav-Principal ul li:hover ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    position: absolute;
+    border: .05px solid #55555556;
+    border-top: .05px solid white;
+    top: 52px;
+}
+
+.nav-Principal ul li:hover ul li{
+    margin: 7px 0;
+}
+
+.nav-Principal ul li:hover ul li a{
+    padding: 0 auto;
+    width: 100%;
+}
+
+    /*Sub menu*/
+
+                .div{
+                    display: none; 
+                    width: 100%;
+                    position: absolute;
+                    top: 150px;
+                    padding:0 150px; 
+                    justify-content: space-between;
+                    
+                }
+                .itens-Vestimentas{
+                    list-style: none;
+                }
+
+                .li {
+                    
+                    color: black;
+                }
+
+                .li h2{
+                    text-transform: uppercase;
+                }
+
+                .li a{
+                    font-size: 10px;
+                    text-decoration: none;
+                    color: #555555;
+                }
+
+                .li a:hover{
+                    text-decoration: underline;
+                    
+                }
+
+                .itens-Vestimentas hr{
+                    background-color: black;
+                    height: 3px;
+                }
+
+
+    /* Logo HEVEREST */
+
+#logo{
+    height: 50px;
+}
+
+    /* Div com os Icones*/
+
+    .icones-site{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    /* Carrinho */
+
+#compras{
+    text-decoration: none;
+}
+                
+#carrinho,#icon-login{ /* icone do Carrinho e Login*/ 
+    color: black;
+    font-size: 20px;
+}
+
+
+
+.barra-menu ul ul{
+    display: none;
+    position: absolute;
+}
+
+.barra-menu ul li:hover ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    position: absolute;
+    border: .05px solid #55555556;
+    border-top: .05px solid white;
+    top: 52px;
+    left: 0;
+}
+
+.barra-menu ul li:hover ul li{
+    margin: 7px 0;
+}
+
+.barra-menu ul li:hover ul li a{
+    padding: 0 auto;
+    width: 100%;
+}
+
+@media screen and (max-width:950px) {
+    .nav-Principal{
+        justify-content: center;
+        padding: 0;
+        height: 110px;
+    }
+
+    .nav-Principal div{
+        position: fixed;
+        height: 110px;
+    }
+
+                .nav-Principal h1{
+                    text-align: center;
+                    width: 200px;
+                }
+
+                #logo{
+                    height: 90px;
+                }
+
+                .sub-nav{
+                    display: none;
+                }
+
+                .top_header{
+                    display: none;
+                }
+
+                .login{
+                    display: flex;
+                    padding: 0;
+                    align-items: center;
+                    height: 33px;
+                }
+
+                .div{
+                    width: 170px;
+                    right: 0;
+                    top: 160px;
+                    padding: 0;
+                    flex-wrap: wrap;
+                }
+
+                .icones-site{
+                    display: none;
+                }
+
+                #carrinho{
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    font-size: 36px;
+                    margin-top: 50px;
+                    margin-right: 20px;
+                }
+            }
+
+            @media screen and (max-width:900px) {
+                
+            }
+
+            @media screen and (max-width:350px) {
+                #logo{
+                    height: 75px;
+                }
+
+                #carrinho{
+                    font-size: 30px;
+                    margin-right: 10px;
+                }
+            }
